@@ -1,0 +1,181 @@
+/*@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600");
+body{
+	line-height: 1;
+	color: white;
+	margin: 0;
+	text-align: center;
+	background-color: #a3b8b8
+}
+/*#header{
+	color: white;
+	text-align: center;
+	font-family: 'Source Sans Pro';font-size: 22px;
+
+}*/
+.header{
+	color: white;
+	text-align: center;
+	font-family: 'Raleway', san-serif;
+	font-size: 18px;
+
+}
+#heading{
+	color: white;
+	text-align: center;
+	font-family:'Raleway', san-serif;
+	margin-top: 200px;
+/* 'Source Sans Pro';font-size: 25px;*/
+
+}
+nav{
+	display: inline;
+	background-color: transparent;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	
+	/*min-height: 10vh;*/
+
+}
+ul,li,a {
+	display: inline;
+ 	 float: left;
+ 	 padding: 14px 16px;
+}
+.nav-links{
+	/*overflow: hidden;*/
+	
+	float: left;
+	display: inline-block;
+	color: black;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+	z-index: 2;
+	color: white;
+	/*background-color: transparent;*/
+
+}
+.nav-links{
+	padding: 1rem;
+
+}
+.nav-links{
+	flex: 1;
+	float: right;
+	
+}
+/*.header ul{
+	list-style-type: none;
+  	margin: 0;
+  	padding: 0;
+	float: right;
+	font-family: 'Raleway', san-serif;
+}*/
+#para{
+	color: white;
+	text-align: center;
+	font-family: 'Raleway', san-serif;
+	font-size: 21px;
+
+}
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+body{
+	font-family: 'Raleway', san-serif;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	perspective: 1000px;
+}
+
+.container{
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+
+}
+.card{
+	transform-style: preserve-3d;
+	min-height: 10vh; /*10vh*/
+	width: 20rem; /*20rem*/
+	border-radius: 1000px; /*1000px*/
+	padding: 0rem 5rem;
+	box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+	
+	
+	
+}
+.myself{
+	min-height: 35vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+
+
+}
+.myself img{
+	width: 20rem;
+	z-index: 2;
+	transition: all 0.75s ease-out
+	
+}
+.circle{
+	width: 18rem;
+	height: 18rem;
+	background: linear-gradient(to right, rgba(20, 20, 25, 0.75), rgba(182, 182, 184,0.75));
+	position: absolute;
+	border-radius: 50%;
+	z-index: 2;
+}
+#vanta-canvas{
+	padding: 0;
+	position: flex;
+	width: 700vh;
+	height: 100vh; 
+	z-index: -2;
+}
+.cursor{
+	width: 2rem;
+	height: 2rem;
+	border: 2px solid white;
+	border-radius: 50%;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	pointer-events: none;
+	transition: all 0.3s ease;
+	transition-property: background, transform;
+	transform-origin: 100% 100%;
+	
+
+
+}
+.link-grow{
+	transform: scale(2);
+	background: white;
+	z-index: 2;
+}
+.hovered-link{
+	color: black;
+
+}
+
+#line2 {
+  width: 200px;
+  height: 5px;
+  background: white;
+  align-items: center;
+  position: absolute;
+  transform: translate(255%, 3800%);
+  
+}

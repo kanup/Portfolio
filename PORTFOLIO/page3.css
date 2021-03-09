@@ -1,0 +1,113 @@
+#vanta-canvas{
+	padding: 0;
+	position: flex;
+	width: 100%;
+	height: 80rem;   /* i did */
+	z-index: -2;
+}
+
+
+
+.header{
+	color: white;
+	text-align: center;
+	font-family: 'Raleway', san-serif;
+	font-size: 18px;
+
+}
+h1{
+	color: white;
+	text-align: center;
+	font-family:'Raleway', san-serif;
+	margin-top: 200px;
+/* 'Source Sans Pro';font-size: 25px;*/
+
+}
+nav{
+	display: flex;
+	justify-content: space-between;
+	width: 90%;
+	min-height: 10vh;
+	align-items: center;
+	margin: auto;
+
+}
+.nav-links{
+	/*overflow: hidden;*/
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+	/*background-color: transparent;*/
+
+}
+.nav-links{
+	padding: 1rem;
+
+}
+.nav-links{
+	flex: 1;
+	float: right;
+}
+p{
+	color: white;
+	text-align: center;
+	font-family: 'Raleway', san-serif;
+	font-size: 21px;
+
+}
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+body{
+	font-family: 'Raleway', san-serif;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	perspective: 1000px;
+}
+
+
+
+.card {
+  flex-direction: row;
+}
+/*.card:hover {
+   transition: 2s;
+   transform: rotate(45deg);
+   height: 300px;
+}*/
+.card img {
+  width: 30%;
+}
+.container{
+	display: inline-flex;
+	margin: auto;
+}
+
+#c1{
+	display: inline-block;
+	/*margin-left: 30px;*/
+	margin: auto;
+	margin-top: 70px;
+}
+
+.icon{
+	font-size: 35px;
+}
+.icon:hover{
+	color: grey;
+	font-weight: bold;
+	/*font-size: 45px;*/
+}
+
+.ml1 {
+  font-weight: 900;
+  font-size: 3.5em;
+  margin: auto;
+  color: white;
+  text-align: center;
+}

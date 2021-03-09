@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+<!-- A viewport meta tag so that web site works well on all devices and screen resolutions -->
+	<meta name = "viewport" content = "width=device-width, initial - scale = 1, user-scalable=no" /> 
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+	<link rel='stylesheet' href="index.css"/>
+	<link href='https://fonts.googleapis.com/css?family=Source Sans Pro' rel='stylesheet'>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
+	<audio id="aud"><source src="KevinMacLeod.mp3" type="audio/mpeg" onclick='this.play()'></audio>
+	<title>ItsKanu</title>
+	
+</head>
+
+<body>
+	
+		
+	<div id="vanta-canvas">
+		<div id ="line2" onmouseover='myMove()'></div>
+		
+		<div class="cursor"></div>
+		<nav>
+			<div class="cursor"></div>
+			<ul class="nav-links">
+				<li><a href="webpage2.html">ABOUT</a></li>
+				<li><a href="webpage3.html">PROJECTS</a></li>
+				<li><a href="webpage4.html">CONTACT</a></li>	
+			</ul>
+		<!-- For all navigation tabs-->
+		</nav>
+		<div class="header">
+			
+		
+			
+		</div>
+		<h1 id="heading">HEY,<br>MYSELF KANU PRIYA.<br></h1>
+		<p id="para">I am a budding designer, keen to serve society by my work.</p>
+		
+		<div class="container">
+			<div class="card">
+				<div class="myself">
+					<div class="circle"></div>
+					<img src="Untitled-1.png" alt="myp">
+				</div>
+				<!--div class="info">
+					<h1 class="title">MYPIC</h1>
+				</div-->
+			</div>
+	</div>
+	<script src="3D.js"></script>
+	<main></main>
+	<footer></footer>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r120/three.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.19/vanta.waves.min.js"></script>
+		<script type="text/javascript">
+			VANTA.WAVES ({
+				el : "#vanta-canvas",
+				mouseControls: true,
+		        touchControls: true,
+		        gyroControls: false,
+		        minHeight: 200.00,
+		        minWidth: 200.00,
+  				scale: 1.00,
+  				scaleMobile: 1.00,
+  				color: 0x202025
+
+			})
+		</script>
+		<script>
+		var id = null;
+		function myMove() {
+		  var elem = document.getElementById("line2");   
+		  var pos = elem.style.transform;
+		  clearInterval(id);
+		  id = setInterval(frame, 6);
+		  function frame() {
+		    if (pos == 150) {
+		      clearInterval(id);
+		    } else {
+		      pos++; 
+		      
+		      elem.style.left = pos + "px"; 
+		    }
+		  }
+		}
+		</script>
+	
+</body>
+
+
+</html>
+
+<!--References: https://www.vantajs.com/?effect=waves-->
